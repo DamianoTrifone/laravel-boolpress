@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Rotta di fallback
+Route::get('{any?}', 'HomeController@index')->where('any', '.*')->name('home');
