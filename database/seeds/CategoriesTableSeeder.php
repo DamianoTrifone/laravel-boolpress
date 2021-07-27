@@ -11,6 +11,14 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
+        $categories = [
+            "backend",
+            "frontend",
+            "UX",
+            "UI",
+            "Network"
+        ];
+
         
     }
 }
