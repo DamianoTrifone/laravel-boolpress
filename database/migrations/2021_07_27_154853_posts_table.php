@@ -15,7 +15,7 @@ class PostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table){
             $table->id();
-            $table->string('nome', 80);
+            $table->string('title', 80);
             $table->string('slug')->unique();
             $table->string('content');
             $table->unsignedBigInteger('category_id')->nullable();
